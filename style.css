@@ -110,6 +110,7 @@ body {
 
 .carousel-3d {
   margin-top: 20vh;
+
 }
 
 /* Contacto */
@@ -204,14 +205,14 @@ h3 {
 /* Ascii Art Fondos */
 .ascii-deco {
   position: absolute;
-  z-index: 2;
   pointer-events: none;
 }
 
 
 .ascii-deco--home {
-  top: 7rem;
+  top: 5rem;
   left: 15rem;
+  
 }
 
 
@@ -224,12 +225,13 @@ h3 {
 .ascii-deco--contact {
   bottom: 0;
   right: 0;
+  z-index: 0;
 }
 
 /* animaciones */
 .fade-in {
-  -webkit-animation: fade-in 1.2s linear both;
-          animation: fade-in 1.2s linear both;
+ -webkit-animation: fade-in 1.2s linear both;
+ animation: fade-in 1.2s linear both;
 }
 
 @-webkit-keyframes fade-in {
