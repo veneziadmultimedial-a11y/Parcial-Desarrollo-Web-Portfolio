@@ -140,14 +140,15 @@
   }
 
 
-  /* ─── Botón CTA ─── */
+  /*botón cta*/
   .btn-cta {
     font-size: 0.85rem;
     padding: 0.35rem 0.75rem;
+    background: rgba(255, 255, 255, 0.541);
   }
 
 
-  /* ─── Tipografías ─── */
+  /*Tipografías*/
   h1 {
     font-size: 2rem;
   }
@@ -222,6 +223,11 @@
 
   .project-nav {
     padding: 2rem 0;
+  }
+  
+  .project-nav .page-link {
+    font-size: 0.75rem;
+    white-space: nowrap; /* ← evitar que el texto se corte en dos líneas*/
   }
 
 }

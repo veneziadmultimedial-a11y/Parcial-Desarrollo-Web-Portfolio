@@ -109,8 +109,9 @@ body {
 }
 
 .carousel-3d {
+  position: relative;
+  z-index: 1;
   margin-top: 20vh;
-
 }
 
 /* Contacto */
@@ -193,7 +194,7 @@ h3 {
   border: 2px solid black;
   border-radius: 0;
   padding: 0.4rem 1rem;
-  background: white;
+  background: rgba(255, 255, 255, 0.541);
 }
 
 .btn-cta:hover {
@@ -206,6 +207,7 @@ h3 {
 .ascii-deco {
   position: absolute;
   pointer-events: none;
+  z-index: 2;
 }
 
 
@@ -226,6 +228,13 @@ h3 {
   bottom: 0;
   right: 0;
   z-index: 0;
+}
+
+.fondo-ascii{
+  background-image: url(./images/ascii-deco3.svg);
+  background-repeat: no-repeat;
+  background-size: 600px 1000px;
+  background-position: right;
 }
 
 /* animaciones */
