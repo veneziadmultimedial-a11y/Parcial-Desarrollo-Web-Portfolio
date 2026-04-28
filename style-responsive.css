@@ -1,0 +1,228 @@
+/* Breakpoint: 768px*/
+@media (width < 768px) {
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), white);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    z-index: 200;
+  }
+
+  /* flex-direction: row sobreescribe el flex-column que Bootstrap para q los links queden alineados horizontalmente*/
+  .sidebar ul {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem;
+    margin-top: 0 !important;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+  }
+
+  .sidebar ul .nav-link {
+    font-size: 0.85rem;
+    padding: 0;
+  }
+
+  .sidebar .nav-brand {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .sidebar h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .sidebar .nav-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-top: 3.5rem;
+  }
+
+
+  /* Home */
+  #home {
+    padding-top: 1.5rem;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #home .img-fluid {
+    width: 80%; 
+    max-width: 80%; /* para q no se vaya hasta los bordes en movil */
+    height: auto;
+    display: block;
+  }
+
+
+  /* ─── About ─── */
+  .about-section {
+    text-align: center;
+    padding: 3rem 1.25rem;
+    margin-top: 5vh;
+  }
+
+  
+  .about-section .col-md-5 {
+    max-width: 40%;
+    margin: 0 auto 1.5rem;
+  }
+
+  .academic-info .col-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.academic-info .row {
+  justify-content: center;
+  margin: 0;
+}
+
+
+  /* ─── Work ─── */
+  .work-section {
+    padding: 3rem 1.25rem;
+    scale: 100%; /* quitamos el scale del desktop que en mobile distorsiona */
+  }
+
+  /* Las cards de work ya son 2 columnas en mobile gracias a 
+     row-cols-2, pero ajustamos el gap */
+  .work-section .row {
+    --bs-gutter-x: 0.75rem;
+  }
+
+  .work-title {
+    font-size: 0.75rem;
+  }
+
+  .carousel-3d {
+    margin-top: 8vh;
+  }
+
+  /* ─── Contact ─── */
+  .contact-section {
+    padding: 3rem 1.25rem;
+    min-height: auto;
+  }
+
+  .contact-section .col-md-5 {
+    max-width: 50%;
+    flex: 0 0 100%;
+  }
+
+  .contact-img {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Footer */
+.footer {
+  margin-left: 0;
+  padding: 1.5rem 1.25rem;
+}
+
+  .ascii-deco { /* Ascii art oculto en mobile */
+    display: none;
+  }
+
+
+  /* ─── Botón CTA ─── */
+  .btn-cta {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+
+  /* ─── Tipografías ─── */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+.academic-info p {
+  font-size: 0.6rem;
+}
+
+
+  /* Estilos de proyectos */
+
+  .back-arrow {
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .project-main {
+    padding: 0 1.25rem;
+  }
+
+  .project-header {
+    padding: 3.5rem 0 1.5rem;
+  }
+
+  .project-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .project-hero {
+    max-height: 45vw;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+  }
+
+  .project-block {
+    padding: 2rem 0;
+  }
+
+  /* La ficha técnica en mobile pasa de borde izquierdo a borde superior */
+  .project-ficha {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 0;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /* Las imágenes en col-6 pasan a full width y se apilan */
+  .project-block .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /*Las imágenes de la seccion work pasan 2 por fila*/
+  .project-block .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* El iframe del flipbook se achica un poco */
+  .fp-iframe {
+    height: 280px !important;
+  }
+
+  .project-nav {
+    padding: 2rem 0;
+  }
+
+}
+

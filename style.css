@@ -7,15 +7,11 @@ body {
 }
 
 /* Nav Lateral */
-:root {
-  --sidebar-width: 6rem; 
-}
-
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: var(--sidebar-width);
+  width: 6rem;
   height: 100vh;
   padding: 2rem 1rem;
   z-index: 100;
@@ -48,7 +44,7 @@ body {
 
 
 .main-content {
-  margin-left: var(--sidebar-width);
+  margin-left: 6rem; /*lo que ocupa el nav lateral*/
 }
 
 /* Home */
@@ -98,7 +94,7 @@ body {
 .work-link::after {
   content: 'Ver proyecto';
   position: absolute;
-  inset: 0;
+  inset: 0; /* abreviar top: 0; right: 0; bottom: 0; left: 0 */
   background: rgba(0, 0, 0, 0.5);
   color: white;
   font-weight: 600;
@@ -118,7 +114,8 @@ body {
 
 /* Contacto */
 .contact-section {
-  min-height: 100vh;
+  position: relative;
+  min-height: auto;
   padding: 6rem 3rem;
   display: flex;
   flex-direction: column;
@@ -149,6 +146,20 @@ body {
   opacity: 0.6;
 }
 
+/* Footer */
+.footer {
+  margin-left: var(--sidebar-width);
+  padding: 1.5rem 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.75rem;
+  color: grey;
+  text-align: center
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
 /* Tipografias */
 h1 {
   font-weight: 600;
@@ -169,7 +180,7 @@ h3 {
   color: grey;
 }
 
-/* Boton Call to Action */
+/* Boton call to action */
 .btn-cta {
   position: fixed;
   bottom: 1rem;
@@ -179,6 +190,7 @@ h3 {
   color: black;
   text-decoration: none;
   border: 2px solid black;
+  border-radius: 0;
   padding: 0.4rem 1rem;
   background: white;
 }
@@ -209,6 +221,10 @@ h3 {
   z-index: 0;
 }
 
+.ascii-deco--contact {
+  bottom: 0;
+  right: 0;
+}
 
 /* animaciones */
 .fade-in {

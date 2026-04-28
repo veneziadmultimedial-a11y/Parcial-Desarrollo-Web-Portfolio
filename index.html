@@ -2,12 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- el ancho del dispositivo es el ancho de la pagina (sirve para responsive) -->
   <title>Portfolio</title>
+  
+  <!-- Google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Iconos redes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style-responsive.css">
+ 
+
+  
 </head>
+
 
 <body>
 
@@ -17,7 +32,7 @@
       <p class="nav-subtitle">Portfolio</p>
       <h1>26'</h1>
     </a>
-    <ul class="nav flex-column mt-5">
+    <ul class="nav flex-column mt-5"> <!-- margen top para separar del logo -->
       <li><a class="nav-link" href="#about">About</a></li>
       <li><a class="nav-link" href="#work">Work</a></li>
       <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -29,7 +44,7 @@
 
     <!-- Home -->
     <header id="home">
-      <img src="images/asciiart-deco1.svg" class="ascii-deco ascii-deco--home" aria-hidden="true">
+      <img src="images/asciiart-deco1.svg" class="ascii-deco ascii-deco--home" aria-hidden="true"> <!-- para que no se lean los ascii art como texto -->
       <img src="images/imagen-home.svg" class="img-fluid fade-in" alt="imagen home">
     </header>
 
@@ -38,12 +53,12 @@
       <img src="images/ascii-deco2.svg" class="ascii-deco ascii-deco--about" aria-hidden="true">
       <div class="row">
 
-        <!-- Columna izquierda: foto -->
+        <!-- Columna izquierda foto -->
         <div class="col-md-5">
-          <img src="images/foto about.svg" alt="foto" class="img-fluid">
+          <img src="images/foto about.svg" alt="foto venezia" class="img-fluid">
         </div>
 
-        <!-- Columna derecha: todo el texto -->
+        <!-- Columna derecha texto sobre mi -->
         <div class="col-md-6">
 
           <h2>About</h2>
@@ -79,8 +94,9 @@
     <!-- Work -->
     <section id="work" class="work-section">
       <h2>Work</h2>
-      <div class="row row-cols-2 row-cols-md-3 g-4">
 
+      <!-- galeria proyectos -->
+      <div class="row row-cols-2 row-cols-md-3 g-4"><!-- 2 columnas x fila para mobile y 3 para destok --> <!-- g4 gap entre cada columa de 4 -->
         <div class="col">
           <a href="proyecto-videoclip.html" class="work-link">
             <img src="images/portada-videoclip.jpg" alt="Edicion y Montaje - Videoclip" class="img-fluid">
@@ -123,6 +139,7 @@
           </a>
         </div>
       </div>
+
 <!-- carrusel trabajo 3D -->
   <div id="carouselExampleCaptions" class="carousel slide carousel-3d">
 
@@ -135,7 +152,6 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
   </div>
 
-  <!-- carousel-inner -->
   <div class="carousel-inner">
 
     <div class="carousel-item active">
@@ -179,7 +195,7 @@
       <div class="carousel-caption d-none d-md-block">
       </div>
     </div>
-  </div><!-- fin .carousel-inner -->
+  </div>
 
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -199,7 +215,7 @@
   <div class="w-100">
     <div class="row align-items-center justify-content-center">
 
-      <div class="col-md-5">
+      <div class="col-md-5 contact-img">
         <img src="images/imagen-contact.svg" alt="collage contacto" class="img-fluid">
       </div>
 
@@ -210,7 +226,7 @@
         <p>+54 11 2736-0056</p>
 
         <div class="social-links">
-          <a href="https://instagram.com/venezia.abqro" target="_blank" aria-label="Instagram">
+          <a href="https://instagram.com/venezia.abqro" target="_blank" aria-label="Instagram"> <!-- target blank para que los iconos redirijan una nueva pestaña-->
             <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="https://behance.net/veneziaabarque1" target="_blank" aria-label="Behance">
@@ -222,23 +238,14 @@
     </div>
   </div>
 </section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2026 Venezia Abarquero Di Stilio. Todos los derechos reservados.</p>
+</footer>
   </main>
 
-  <!-- CTA fijo -->
-  <a class="btn-cta" href="mailto:veneziaabarquero@gmail.com">Email me!</a>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    const cards = document.querySelectorAll('.work-section .col');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('slide-in-right');
-        }
-      });
-    }, { threshold: 0.1 });
-    cards.forEach(card => observer.observe(card));
-  </script>
-
+  <!-- Boton cta fijo -->
+  <a class="btn btn-outline-dark btn-cta" href="mailto:veneziaabarquero@gmail.com">Email me!</a>
 </body>
 </html>

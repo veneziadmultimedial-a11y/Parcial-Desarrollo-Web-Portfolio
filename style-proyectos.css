@@ -104,65 +104,33 @@ body.project-page {
   margin-bottom: 0;
 }
 
-/* ─── Navegación entre proyectos ─── */
+/*navegación entre proyectos*/
 .project-nav {
   padding: 2.5rem 0;
   margin-top: 1rem;
 }
 
-.project-nav-link {
+.project-nav .page-link {
+  color: black;
   font-weight: 600;
   font-size: 0.9rem;
-  color: black;
   text-decoration: none;
+  border: none;
+  background: transparent;
   transition: opacity 0.2s;
 }
 
-.project-nav-link:hover {
+.project-nav .page-link:hover {
+  color: black;
   opacity: 0.4;
+  background: transparent;
+}
+
+.project-nav .page-item.active .page-link,
+.project-nav .page-link:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
   color: black;
 }
 
-/* responsive */
-@media (max-width: 768px) {
-
-  .back-arrow {
-    top: 1rem;
-    left: 1rem;
-    font-size: 1.25rem;
-  }
-
-  .project-main {
-    padding: 0 1.25rem;
-  }
-
-  .project-header {
-    padding: 3.5rem 0 1.5rem;
-  }
-
-  .project-header h1 {
-    font-size: 1.75rem;
-  }
-
-  .project-hero {
-    max-height: 45vw;
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-  }
-
-  .project-block {
-    padding: 2rem 0;
-  }
-
-  .project-ficha {
-    border-left: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding-left: 0;
-    padding-top: 1.5rem;
-    margin-top: 1rem;
-  }
-
-  .project-nav {
-    padding: 2rem 0;
-  }
-}
