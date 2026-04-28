@@ -17,7 +17,7 @@
     z-index: 200;
   }
 
-  /* flex-direction: row sobreescribe el flex-column que Bootstrap para q los links queden alineados horizontalmente*/
+  /* flex-direction: row sobreescribe el flex-column de Bootstrap para q los links queden alineados horizontalmente*/
   .sidebar ul {
     display: flex !important;
     flex-direction: row !important;
@@ -63,13 +63,13 @@
 
   #home .img-fluid {
     width: 80%; 
-    max-width: 80%; /* para q no se vaya hasta los bordes en movil */
+    max-width: 80%; /* para q no se vaya hasta los bordes en mobile */
     height: auto;
     display: block;
   }
 
 
-  /* ─── About ─── */
+  /*about*/
   .about-section {
     text-align: center;
     padding: 3rem 1.25rem;
@@ -94,16 +94,10 @@
 }
 
 
-  /* ─── Work ─── */
+  /*work*/
   .work-section {
     padding: 3rem 1.25rem;
-    scale: 100%; /* quitamos el scale del desktop que en mobile distorsiona */
-  }
-
-  /* Las cards de work ya son 2 columnas en mobile gracias a 
-     row-cols-2, pero ajustamos el gap */
-  .work-section .row {
-    --bs-gutter-x: 0.75rem;
+    scale: 100%; 
   }
 
   .work-title {
@@ -114,7 +108,7 @@
     margin-top: 8vh;
   }
 
-  /* ─── Contact ─── */
+  /*contact*/
   .contact-section {
     padding: 3rem 1.25rem;
     min-height: auto;
@@ -129,16 +123,15 @@
     margin-bottom: 1.5rem;
   }
 
-  /* Footer */
+  /*footer*/
 .footer {
   margin-left: 0;
   padding: 1.5rem 1.25rem;
 }
 
-  .ascii-deco { /* Ascii art oculto en mobile */
+  .ascii-deco { /*ascii art oculto en mobile*/
     display: none;
   }
-
 
   /*botón cta*/
   .btn-cta {
@@ -148,7 +141,7 @@
   }
 
 
-  /*Tipografías*/
+  /*tipografías*/
   h1 {
     font-size: 2rem;
   }
@@ -165,7 +158,7 @@
 }
 
 
-  /* Estilos de proyectos */
+  /*Estilos de proyectos*/
 
   .back-arrow {
     top: 1rem;
@@ -195,7 +188,7 @@
     padding: 2rem 0;
   }
 
-  /* La ficha técnica en mobile pasa de borde izquierdo a borde superior */
+  /*ficha técnica en mobile pasa de borde izquierdo a borde superior*/
   .project-ficha {
     border-left: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -204,19 +197,19 @@
     margin-top: 1rem;
   }
 
-  /* Las imágenes en col-6 pasan a full width y se apilan */
+  /*imágenes en col-6 pasan a full width y se apilan*/
   .project-block .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  /*Las imágenes de la seccion work pasan 2 por fila*/
+  /*imágenes de la seccion work pasan 2 por fila*/
   .project-block .col-3 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  /* El iframe del flipbook se achica un poco */
+  /*iframe del flipbook se achica un poco */
   .fp-iframe {
     height: 280px !important;
   }
@@ -227,7 +220,7 @@
   
   .project-nav .page-link {
     font-size: 0.75rem;
-    white-space: nowrap; /* ← evitar que el texto se corte en dos líneas*/
+    white-space: nowrap; /*evita que el texto se corte en dos líneas*/
   }
 
 }

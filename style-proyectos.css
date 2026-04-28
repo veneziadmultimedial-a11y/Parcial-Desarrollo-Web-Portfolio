@@ -1,4 +1,4 @@
-/* ─── Flecha volver ─── */
+/*Flecha volver*/
 .back-arrow {
   position: fixed;
   top: 1.5rem;
@@ -18,7 +18,7 @@
 }
 
 
-/* ─── Layout general ─── */
+/*Layout general*/
 .project-page body,
 body.project-page {
 }
@@ -30,7 +30,7 @@ body.project-page {
 }
 
 
-/* ─── Encabezado ─── */
+/*Encabezado*/
 .project-header {
   padding: 5rem 0 2rem;
 }
@@ -56,7 +56,7 @@ body.project-page {
 }
 
 
-/* ─── Hero ─── */
+/*hero*/
 .project-hero {
   margin-bottom: 0;
   overflow: hidden;
@@ -70,7 +70,6 @@ body.project-page {
 }
 
 
-/* ─── Bloques genéricos ─── */
 .project-block {
   padding: 3rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -81,7 +80,7 @@ body.project-page {
 }
 
 
-/* ─── Ficha técnica ─── */
+/*ficha técnica*/
 .project-ficha {
   border-left: 1px solid rgba(0, 0, 0, 0.12);
   padding-left: 2rem;

@@ -6,7 +6,7 @@ body {
   color: black;
 }
 
-/* Nav Lateral */
+/*Nav Lateral*/
 .sidebar {
   position: fixed;
   top: 0;
@@ -58,7 +58,7 @@ body {
   max-width: 100%;
 }
 
-/* About */
+/*about*/
 .about-section {
   padding: 6rem 3rem;
   margin-top: 20vh;        /* espacio blanco entre home y about */
@@ -70,7 +70,7 @@ body {
   color: grey;
 }
 
-/* Work */
+/*work*/
 .work-section {
   position: relative;
   padding: 6rem 3rem;
@@ -148,9 +148,9 @@ body {
   opacity: 0.6;
 }
 
-/* Footer */
+/*footer*/
 .footer {
-  margin-left: var(--sidebar-width);
+  margin-left: 6rem;
   padding: 1.5rem 3rem;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   font-size: 0.75rem;
@@ -177,7 +177,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.9375rem; /* 15px */
+  font-size: 0.9375rem; 
   font-weight: 600;
   color: grey;
 }
